@@ -1,11 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Get Help Here!</title>
-    <h1>Elderly Assistance</h1>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?q=80&w=2439&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Front Page Image" class="login-image">
+
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      
+      <div>
+        <div class="login-form-column-left">
+          <input type="number" name="age" id="age-field" class="login-form-field" placeholder="Age">
+          <input type="text" name="illnesses" id="illnesses-field" class="login-form-field" placeholder="Illnesses">
+          <input type="number" name="height" id="height-field" class="login-form-field" placeholder="Height">
+        </div>
+        <div class="login-form-column-right">
+          <input type="number" name="weight" id="weight-field" class="login-form-field" placeholder="Weight">
+          <input type="date" name="DOB" id="DOB-field" class="login-form-field" placeholder="Date of Birth">
+          <input type="text" name="address" id="address-field" class="login-form-field" placeholder="Address">
+          <input type="email" name="email" id="email-field" class="login-form-field" placeholder="Email">
+        </div>
+      </div>
+      
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
+</body>
+
 </html>
