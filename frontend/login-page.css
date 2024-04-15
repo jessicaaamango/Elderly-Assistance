@@ -24,11 +24,13 @@ html {
   }
 
   #login-error-msg-holder {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     display: grid;
     justify-items: center;
     align-items: center;
+    position: absolute;
+    margin-top: 20px;
   }
 
   #login-error-msg {
@@ -53,6 +55,15 @@ html {
     display: grid;
     justify-items: center;
     align-items: center;
+    position: relative;
+  }
+
+  #prime-form {
+
+  }
+
+  h1 {
+    align-items: right;
   }
 
   .login-form-field::placeholder {
@@ -84,8 +95,9 @@ html {
     position: absolute; 
     left: 0; 
     width: 50%; 
-    height: auto; 
+    height: 100%; 
   }
+
   .login-form-column-left,
   .login-form-column-right {
     flex: 1;
