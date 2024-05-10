@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "vite": "^5.2.11"
+    "qrcode": "^1.5.3",
+    "speakeasy": "^2.0.0"
   }
 }
