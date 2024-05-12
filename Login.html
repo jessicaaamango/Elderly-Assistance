@@ -1,0 +1,100 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background color */
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items in a column */
+            height: 100vh;
+        }
+        .image-box {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .image-box img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px; /* Ensure image inherits border radius */
+        }
+        .login-form {
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .register-link {
+            text-align: center;
+        }
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?q=80&w=2439&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo">
+        </div>
+        <h2>Welcome to ElderlyCare</h2>
+        <div class="login-form">
+            <form id="loginForm" method="post" action="Login.php">
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+            
+                <button type="submit">Login</button>
+            </form>
+            <div class="register-link">
+                <p>Don't have an account? <a href="Register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

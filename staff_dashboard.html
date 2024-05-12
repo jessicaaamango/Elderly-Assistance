@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background color */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #070001;
+            background-color: blue;
+        }
+
+        .logo {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .logo-header {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/jpeg;base64,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" alt="Elderly Assistance Logo" class="logo">
+        <h1 class="logo-header">Elderly Assistance</h1>
+        <h1>Staff Dashboard</h1>
+        <div id="user-info">
+            <!-- User information will be displayed here -->
+        </div>
+        <button class="btn-primary" onclick="showUserList()">View Users</button>
+        <div id="user-list"></div> <!-- Container for displaying user list -->
+    </div>
+
+    <!-- JavaScript for AJAX request and actions -->
+    <script>
+        // Function to make AJAX request and display user information
+        function showUserInfo() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var user = JSON.parse(this.responseText);
+                    displayUserInfo(user);
+                }
+            };
+            xhr.open('GET', 'staff_dashboard.php', true);
+            xhr.send();
+        }
+
+        // Function to display user information
+        function displayUserInfo(user) {
+            var userInfoContainer = document.getElementById('user-info');
+            userInfoContainer.innerHTML = `
+                <p><strong>Name:</strong> ${user.first_name} ${user.last_name}</p>
+                <p><strong>Position:</strong> ${user.title}</p>
+                <p><strong>Phone Number:</strong> ${user.phone_number}</p>
+            `;
+        }
+
+        // Invoke showUserInfo function when page loads
+        window.onload = showUserInfo;
+
+        // Function to make AJAX request and display user list
+        function showUserList() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var userList = JSON.parse(this.responseText);
+                    displayUserList(userList);
+                }
+            };
+            xhr.open('GET', 'get_users.php', true);
+            xhr.send();
+        }
+
+        // Function to display user list
+        function displayUserList(userList) {
+            var userListContainer = document.getElementById('user-list');
+            userListContainer.innerHTML = '<h2>Patients</h2>';
+            userList.forEach(function(user) {
+                userListContainer.innerHTML += `
+                <p><strong>Name:</strong> ${user.first_name} ${user.last_name}</p>
+                <p><strong>Age:</strong> ${user.age}</p>
+                <p><strong>Room Number:</strong> ${user.room_number}</p>
+                <p><strong>Illness:</strong> ${user.illness}</p>
+                <p><strong>Phone Number:</strong> ${user.phone_number}</p>
+                    <hr>
+                `;
+            });
+        }
+
+    </script>
+</body>
+</html>

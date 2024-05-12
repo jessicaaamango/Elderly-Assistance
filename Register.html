@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Care Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f9; /* Light blue background color */
+        }
+
+        header {
+            background-color: #007bff; /* Blue header background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .register-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .register-container img {
+            display: block;
+            margin: 0 auto 20px; /* Center the image horizontally */
+            width: 200px; /* Set the width of the image */
+            height: 200px; /* Set the height of the image */
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-container h2 {
+            color: #007bff;
+        }
+
+        .register-form {
+            text-align: center;
+            margin-top: 20px; /* Add spacing below the image */
+        }
+
+        .register-form input,
+        .register-form select,
+        .register-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register-form button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elderly Care Registration</h1>
+    </header>
+
+    <div class="register-container">
+        <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?q=80&w=2439&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elderly Care Image">
+
+        <h2>Register</h2>
+        <form class="register-form" method="post" action="Register.php">
+            <input type="text" name="firstName" placeholder="First Name" required><br>
+            <input type="text" name="lastName" placeholder="Last Name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="text" name="address" placeholder="Address" required><br>
+            <input type="number" name="age" placeholder="Age" required><br>
+            <input type="text" name="roomNumber" placeholder="Room Number" required><br>
+            <input type="text" name="illness" placeholder="Illness" required><br>
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" required><br>
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="user">User</option>
+                <option value="front">Front</option>
+                <option value="admin">Admin</option>
+            </select><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
