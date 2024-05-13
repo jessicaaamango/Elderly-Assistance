@@ -1,0 +1,15 @@
+#files with sensitive information
+*.isk
+
+/node_modules/
+
+# log files
+/logs/
+*.log
+
+#macOS specific files
+.DS_Store
+
+#Visual Studio Code settings
+.vscode/
+!.vscode/extensions.json
