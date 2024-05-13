@@ -12,23 +12,18 @@ loginButton.addEventListener("click", (e) => {
     const role = regForm.role;
 
     if (id == "id" && username === "email" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
-
-    document.getElementById("submit").onclick = function () {
-        if (role === "front") {
-            location.href = "../html/staff_dashboard.html";
-        } else if (role === "user") {
-            location.href = "../html/user_dashboard.html";
-
-        } else if (role === "admin") {
-            location.href = "../html/ceo_dashboard.html";
-
+        // switching pages
+        document.getElementById("submit").onclick = function () {
+            if (role === "front") {
+                location.href = "../html/staff_dashboard.html";
+            } else if (role === "user") {
+                location.href = "../html/user_dashboard.html";
+      
+            } else if (role === "admin") {
+                location.href = "../html/ceo_dashboard.html";
+      
+            }
         }
-
     };
 
 });
