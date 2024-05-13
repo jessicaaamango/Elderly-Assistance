@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../styles/login.css">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?q=80&w=2439&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo">
+        </div>
+        <h2>Welcome to Golden Prime Care</h2>
+        <div class="login-form">
+            <form id="loginForm" method="post" action="Login.php">
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+            
+                <button type="submit">Login</button>
+                <p>- OR -</p>
+            <p>Login via Google Authentication</p>
+            <img src= "data:image/data:image/png;base64,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">
+            </form>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="Register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -5,6 +5,6 @@ var verified = speakeasy.totp.verify({
     encoding: 'ascii',
     token: '939777'
 
-})
+});
 
 console.log(verified)
